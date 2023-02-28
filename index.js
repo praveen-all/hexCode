@@ -24,6 +24,6 @@ btn.addEventListener("click",()=>{
 
 let btn1=document.getElementById('btn2');
 btn1.addEventListener("click",()=>{
-    div.style. backgroundColor=app;;
+    
     clearInterval(inverval);
 })
