@@ -12,9 +12,10 @@ let div=document.querySelector(".clrbdy");
 // console.log(div);
 // console.log(btn);
 let inverval;
+let app;
 btn.addEventListener("click",()=>{
     inverval=setInterval(() => {
-    let app=func();
+     app=func();
     div.style. backgroundColor=app;
     div.innerText=app;
   }, 1000);
@@ -23,6 +24,6 @@ btn.addEventListener("click",()=>{
 
 let btn1=document.getElementById('btn2');
 btn1.addEventListener("click",()=>{
-    div.style. backgroundColor="white";
+    div.style. backgroundColor=app;;
     clearInterval(inverval);
 })
