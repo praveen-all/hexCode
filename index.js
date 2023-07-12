@@ -13,17 +13,21 @@ let div=document.querySelector(".clrbdy");
 // console.log(btn);
 let inverval;
 let app;
+let istrue=true;
 btn.addEventListener("click",()=>{
+    if(istrue){
+        istrue=false;
     inverval=setInterval(() => {
      app=func();
     div.style. backgroundColor=app;
     div.innerText=app;
   }, 1000);
+    }
 })
 
 
 let btn1=document.getElementById('btn2');
 btn1.addEventListener("click",()=>{
-    
+     istrue=true;
     clearInterval(inverval);
 })
